@@ -4,11 +4,10 @@ subtitle: ""
 layout: archive
 author_profile: true
 sidebar_main: true
-permalink: categories/Study
+permalink: /categories/Study
 categories:
  - Study
 tags: [Study]  # 해시태그를 여기에 입력하세요
-excerpt: "공부한 것을 정리합니다."
 ---
 
 
