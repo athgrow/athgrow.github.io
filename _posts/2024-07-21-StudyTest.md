@@ -1,18 +1,25 @@
 ---
 title: "Study 카테고리 생성test"
 subtitle: ""
-layout: archive
-author_profile: true
-sidebar_main: true
+excerpt: "반영되는 지 테스트 중입니다."
+
 permalink: /categories/Study
 categories:
  - Study
-tags: [Study]  # 해시태그를 여기에 입력하세요
+tags: [Study]  
+
+date: 2024-07-21
+last_modified_at: 2024-08-05
+
+layout: archive
+
+author_profile: true
+sidebar_main: true
+
+toc: true
+toc_sticky: true
 ---
 
-
-{% assign posts = site.categories.Study %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
 
 
 카테고리 생성이 제대로 되는지 테스트 중입니다. Study 카테고리가 생성되어야합니다.

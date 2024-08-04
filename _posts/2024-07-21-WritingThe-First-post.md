@@ -1,20 +1,29 @@
 ---
 title: "블로그 제작과 첫글 작성에 대한 후기..."
 subtitle: "무에서 유로 창조하기 위한 정리글"
-layout: archive
-author_profile: true
-sidebar_main: true
+excerpt: "가볍게 씁니다."
+
 permalink: categories/Diary
 categories:
  - Diary
-tags: [일기, GithubBlog]  # 해시태그를 여기에 입력하세요
-excerpt: "가볍게 씁니다."
+tags: [일기, GithubBlog]
+
+date: 2024-07-21
+last_modified_at: 2024-08-05
+
+layout: archive
+
+author_profile: true
+sidebar_main: true
+
+toc: true
+toc_sticky: true
+
+
 
 ---
 
 
-{% assign posts = site.categories.Diary %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
 
 
 # 천천히 배우는 중
