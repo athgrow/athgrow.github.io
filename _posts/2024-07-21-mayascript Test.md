@@ -1,8 +1,15 @@
 ---
-title: "마야 스크립트 카테고리 적용유무 테스트"
-date: 2024-07-21
-categories: 
-  - maya script
+layout: archive
+title: "마야 스크립트 글 Test"
+subtitle: ""
+permalink: categories/MayaScript
+categories:
+ - MayaScript
+tags: [VFX, MayaScript]  # 해시태그를 여기에 입력하세요
+author_profile: true
+sidebar_main: true
 ---
 
-마야스크립트 글이 써지고 메뉴를 눌렀을때 제대로 보여지는지 테스트 중입니다. 
+{% assign posts = site.categories.MayaScript %}
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+
