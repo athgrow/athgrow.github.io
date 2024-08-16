@@ -69,6 +69,7 @@ $footer-text-color: #D3D3D3; // Light Gray
 
 .sidebar__section h2 {
   font-size: 1.5rem;
+  font-weight: bold; /* 제목 폰트를 굵게 설정 */
   margin-bottom: 0.5rem;
 }
 
@@ -84,6 +85,7 @@ $footer-text-color: #D3D3D3; // Light Gray
 .sidebar__section ul li a {
   text-decoration: none;
   color: $primary-color;
+  font-weight: bold; /* 링크 폰트를 굵게 설정 */
 }
 
 .sidebar__section ul li a:hover {
