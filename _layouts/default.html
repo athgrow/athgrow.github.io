@@ -46,6 +46,11 @@ classes: wide
     {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}
 
+    <!-- 사이드바 추가 -->
+  <div class="sidebar-container">
+    {% include sidebar.html %}
+  </div>
+    
     <div class="initial-content">
       {{ content }}
     </div>
