@@ -45,6 +45,11 @@ classes: wide
     {% include_cached skip-links.html %}
     {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}
+
+    //사이드에 카테고리 표시해주는 구간
+    <div class="sidebar-container">
+      {% include sidebar.html %}
+    </div>
     
     <div class="initial-content">
       {{ content }}
