@@ -36,6 +36,8 @@ classes: wide
       {
           width:12px;height:12px;background:transparent;}
       }  
+
+      
     </style>
   </head>
 
@@ -44,11 +46,8 @@ classes: wide
     {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}
 
-    <div id="main" class="page__main">
-      {% include sidebar.html %}
-      <div class="initial-content">
-        {{ content }}
-      </div>
+    <div class="initial-content">
+      {{ content }}
     </div>
 
     {% if site.search == true %}
