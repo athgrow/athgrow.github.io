@@ -36,9 +36,9 @@ comments:
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
-    # https://developers.facebook.com/docs/plugins/comments
+    # 
     appid                :
-    num_posts            : # 5 (default)
+    num_posts            : # 3 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : "photon-dark" # "github-light" (default), "github-dark"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "가드너 AThgrow🌿"
   avatar           : "/assets/images/bonobono.jpg"
-  bio              : "성장하는 나무가 좋습니다."
+  bio              : "성장하는 나무가 되자."
   #location         : "Seoul, South Korea"
   links:
     - label: "Email"
@@ -205,6 +205,9 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# custom SCSS file
+custom_styles: "assets/css/main.scss"
 
 
 # Outputting
