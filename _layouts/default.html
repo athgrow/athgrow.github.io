@@ -1,3 +1,7 @@
+---
+classes: wide
+---
+
 <!doctype html>
 <!--
   Minimal Mistakes Jekyll Theme 4.19.2 by Michael Rose
@@ -40,12 +44,10 @@
     {% include_cached browser-upgrade.html %}
     {% include_cached masthead.html %}
 
-    <div class="main-wrapper">
+    <div id="main" class="page__main">
       {% include sidebar.html %}
-      <div class="content">
-        <div class="initial-content">
-          {{ content }}
-        </div>
+      <div class="initial-content">
+        {{ content }}
       </div>
     </div>
 
@@ -67,5 +69,6 @@
     </aside>
 
     {% include scripts.html %}
+
   </body>
 </html>
