@@ -62,4 +62,33 @@ $footer-text-color: #D3D3D3; // Light Gray
   color: $secondary-color;
 }
 
+// 사이드 공간의 카테고리용.
+.sidebar__section {
+  margin-bottom: 1rem;
+}
+
+.sidebar__section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar__section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar__section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar__section ul li a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.sidebar__section ul li a:hover {
+  text-decoration: underline;
+}
+
+
 // Additional custom styles can be added below as needed
