@@ -51,9 +51,9 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : false # true, false (default)
-search_full_content      : false # true, false (default)
-search_provider          : #lunr # lunr (default), algolia, google
+search: true # 검색 기능을 활성화하려면 true로 설정
+search_full_content: false # false로 설정하면 포스트의 전체 내용 대신 일부만 검색에 포함
+search_provider: "lunr" # 사용하려는 검색 제공자를 설정 (lunr, algolia, google)
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
