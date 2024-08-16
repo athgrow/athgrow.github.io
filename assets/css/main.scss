@@ -90,5 +90,29 @@ $footer-text-color: #D3D3D3; // Light Gray
   text-decoration: underline;
 }
 
+//사이드바 관련 
+
+/* 추가할 CSS */
+.main-wrapper {
+  display: flex;
+}
+
+.sidebar {
+  width: 300px; /* 사이드바의 너비 조정 */
+}
+
+.content {
+  flex: 1; /* 콘텐츠가 사이드바 옆에 맞춰서 확대됨 */
+}
+
+/* 사이드바 위쪽 버튼 스타일 */
+.sidebar__top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+
 
 // Additional custom styles can be added below as needed
