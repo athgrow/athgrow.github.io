@@ -2,8 +2,7 @@
 title: "마야 스크립트 글 Test"
 subtitle: ""
 permalink: categories/MayaScript
-categories:
- - MayaScript
+categories: [MayaScript]
 tags: [MEL, MayaScript]  # 해시태그를 여기에 입력하세요
 
 date: 2024-07-21
