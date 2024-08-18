@@ -1,7 +1,7 @@
 ---
 title: "마야 핫키"
 layout: archive
-permalink: categories/MayaHotkey
+permalink: /categories/MayaHotkey/
 author_profile: true
 sidebar_main: true
 ---
