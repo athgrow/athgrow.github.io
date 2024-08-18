@@ -1,7 +1,7 @@
 ---
 title: "기타 배우기"
 layout: archive
-permalink: categories/guitar
+permalink: /categories/guitar/
 author_profile: true
 sidebar_main: true
 ---
