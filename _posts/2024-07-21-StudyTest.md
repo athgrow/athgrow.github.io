@@ -3,9 +3,9 @@ title: "Study 카테고리 생성test"
 subtitle: ""
 excerpt: "반영되는 지 테스트 중입니다."
 
-permalink: /categories/Study/
-categories: [Test]
-tags: [Study]  
+permalink: /categories/study/
+categories: [test]
+tags: [study]  
 
 date: 2024-07-21
 last_modified_at: 2024-08-05
