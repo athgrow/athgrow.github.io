@@ -1,7 +1,7 @@
 ---
 title: "마야 스크립트 글 Test"
 subtitle: ""
-permalink: categories/MayaScript
+permalink: /categories/MayaScript/
 categories: [MayaScript]
 tags: [MEL, MayaScript]  # 해시태그를 여기에 입력하세요
 
