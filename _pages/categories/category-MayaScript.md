@@ -1,7 +1,7 @@
 ---
 title: "마야 스크립트"
 layout: archive
-permalink: categories/MayaScript
+permalink: /categories/MayaScript/
 author_profile: true
 sidebar_main: true
 ---
