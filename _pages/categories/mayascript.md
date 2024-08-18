@@ -1,7 +1,7 @@
 ---
 title: "마야 스크립트"
 layout: archive
-permalink: /categories/MayaScript/
+permalink: /categories/mayascript/
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.MayaScript %}
+{% assign posts = site.categories.mayascript %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
