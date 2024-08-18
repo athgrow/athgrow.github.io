@@ -7,112 +7,11 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// Custom font
+
+// "Cafe24Oneprettynight"
 @font-face {
     font-family: 'Cafe24Oneprettynight';
     src: local('Cafe24Oneprettynight'), url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
-// Custom colors
-$primary-color: #2E8B57; // Sea Green
-$secondary-color: #FFD700; // Golden Yellow
-$background-color: #F5F5F5; // Whisper Gray
-$header-bg-color: #4682B4; // Steel Blue
-$footer-bg-color: #2F4F4F; // Dark Slate Gray
-$text-color: #333333; // Dark Charcoal
-$header-text-color: #FFFFFF; // White
-$footer-text-color: #D3D3D3; // Light Gray
-
-// Search bar styling
-.search-input {
-  width: 100%;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border: 1px solid $primary-color;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
-}
-
-.search-input:focus {
-  outline: none;
-  border-color: $secondary-color;
-  box-shadow: 0 0 5px rgba($secondary-color, 0.5);
-}
-
-.results {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.results li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid $primary-color;
-}
-
-.results li a {
-  text-decoration: none;
-  color: $primary-color;
-}
-
-.results li a:hover {
-  color: $secondary-color;
-}
-
-// 사이드 공간의 카테고리용.
-.sidebar__section {
-  margin-bottom: 1rem;
-}
-
-.sidebar__section h2 {
-  font-size: 1.5rem;
-  font-weight: bold; /* 제목 폰트를 굵게 설정 */
-  margin-bottom: 0.5rem;
-}
-
-.sidebar__section ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar__section ul li {
-  margin-bottom: 0.5rem;
-}
-
-.sidebar__section ul li a {
-  text-decoration: none;
-  color: $primary-color;
-  font-weight: bold; /* 링크 폰트를 굵게 설정 */
-}
-
-.sidebar__section ul li a:hover {
-  text-decoration: underline;
-}
-
-
-//사이드바 
-/* 추가할 CSS */
-.main-wrapper {
-  display: flex;
-}
-
-.sidebar {
-  width: 300px; /* 사이드바의 너비 조정 */
-}
-
-.content {
-  flex: 1; /* 콘텐츠가 사이드바 옆에 맞춰서 확대됨 */
-}
-
-/* 사이드바 위쪽 버튼 스타일 */
-.sidebar__top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-}
-
-// Additional custom styles can be added below as needed
