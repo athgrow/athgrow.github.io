@@ -34,7 +34,7 @@ layout: archive
       <section id="{{ category_id }}" class="taxonomy__section">
         <h2 class="archive__subtitle">{{ category[0] }}</h2>
         <div class="entries-{{ page.entries_layout | default: 'list' }}">
-          {% for post in category.last %}
+          {% for post in category[1] %}
             <article class="archive-item">
               <div>
                 <span>
