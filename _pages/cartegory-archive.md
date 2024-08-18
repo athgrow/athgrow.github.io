@@ -1,8 +1,12 @@
 ---
-title: "Category"
-layout: categories
+layout: default
+title: Categories
 permalink: /categories/
-author_profile: true
-sidebar_main: true
 ---
 
+<h1>Categories</h1>
+<ul>
+  {% for category in site.categories %}
+    <li><a href="/categories/{{ category[0] }}">{{ category[0] }}</a></li>
+  {% endfor %}
+</ul>
