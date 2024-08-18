@@ -1,7 +1,7 @@
 ---
 title: "일상기록"
 layout: archive
-permalink: categories/Diary
+permalink: /categories/Diary/
 author_profile: true
 sidebar_main: true
 ---
