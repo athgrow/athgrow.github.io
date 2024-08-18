@@ -4,7 +4,7 @@ subtitle: ""
 excerpt: "반영되는 지 테스트 중입니다."
 
 permalink: /categories/Study
-categories: Test
+categories: [Test]
 tags: [Study]  
 
 date: 2024-07-21
