@@ -3,7 +3,7 @@ title: "Study 카테고리 생성test"
 subtitle: ""
 excerpt: "반영되는 지 테스트 중입니다."
 
-permalink: /categories/Study
+permalink: /categories/Study/
 categories: [Test]
 tags: [Study]  
 
