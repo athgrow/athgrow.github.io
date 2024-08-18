@@ -3,7 +3,7 @@ title: "블로그 제작과 첫글 작성에 대한 후기..."
 subtitle: "무에서 유로 창조하기 위한 정리글"
 excerpt: "가볍게 씁니다."
 
-permalink: categories/Diary
+permalink: /categories/Diary/
 categories: [Diary]
 tags: [일기, GithubBlog]
 
