@@ -1,7 +1,7 @@
 ---
 title: "운동 취미 클라이밍"
 layout: archive
-permalink: categories/climbing
+permalink: /categories/climbing/
 author_profile: true
 sidebar_main: true
 ---
