@@ -1,5 +1,5 @@
 ---
-title: "s-develop"
+title: "자기개발"
 layout: archive
 permalink: categories/s-develop
 author_profile: true
