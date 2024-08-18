@@ -12,33 +12,34 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "custom" # "default"  "air", "aqua", "contrast", "dirt", "neon", "mint", "plum", "sunrise", "custom"
+minimal_mistakes_skin    : "custom" # Available options: "default", "air", "aqua", "contrast", "dirt", "neon", "mint", "plum", "sunrise", "custom"
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : " 나를 돌아보며, 내일을 설계 : Journey of Growth "
+title                    : "나를 돌아보며, 내일을 설계 : Journey of Growth"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : # Site tagline that appears below the site title in the masthead
 name                     : "AThG"
 description              : "너무 어렵지만 그래도 해보는 블로그"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : # Base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # Subpath of your site, e.g. "/blog"
 repository               : "athgrow/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : true # true, false (default)
+teaser                   : # Path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # Path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # Overrides the website title displayed in the masthead; use " " for no title
+breadcrumbs              : true # true or false (default)
 words_per_minute         : 200
+
+# Comments Configuration
 comments:
   provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : #"athgrow-github-io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : # "athgrow-github-io" # Disqus shortname
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server               : # Discourse server URL, e.g., meta.discourse.org
   facebook:
-    # 
-    appid                :
-    num_posts            : # 3 (default)
+    appid                : # Facebook App ID
+    num_posts            : # Number of posts to show (default: 3)
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : "photon-dark" # "github-light" (default), "github-dark"
@@ -46,14 +47,19 @@ comments:
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+
+# reCaptcha Configuration
 reCaptcha:
-  siteKey                :
-  secret                 :
+  siteKey                : # Your reCaptcha site key
+  secret                 : # Your reCaptcha secret key
+
+# Feed and Search
 atom_feed:
-  path                   : # blank (default) uses feed.xml
-search: true # 검색 기능을 활성화하려면 true로 설정
-search_full_content: false # false로 설정하면 포스트의 전체 내용 대신 일부만 검색에 포함
-search_provider: "lunr" # 사용하려는 검색 제공자를 설정 (lunr, algolia, google)
+  path                   : # Path to Atom feed; blank uses feed.xml
+
+search: true # Enable search functionality
+search_full_content: false # Set to false to include only excerpts in search
+search_provider: "lunr" # Search provider (lunr, algolia, google)
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -62,6 +68,7 @@ algolia:
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
+
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -75,9 +82,9 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  "/assets/images/bonobono.jpg" # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+og_image                 : "/assets/images/bonobono.jpg" # Open Graph/Twitter default site image
+
+# Social Profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
@@ -87,9 +94,8 @@ social:
 analytics:
   provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "G-TJFH1KGSB7"
-    anonymize_ip         : false # true, false (default)
-
+    tracking_id          : "G-TJFH1KGSB7" # Google Analytics Tracking ID
+    anonymize_ip         : false # true or false (default)
 
 # Site Author
 author:
@@ -116,7 +122,6 @@ author:
     #- label: "Facebook"
     #  icon: "fab fa-fw fa-facebook-square"
       # url: ""
-    
 
 # Site Footer
 footer:
@@ -130,8 +135,6 @@ footer:
     #- label: "Facebook"
     #  icon: "fab fa-fw fa-facebook-square"
       # url:
-    
-      # url:
     #- label: "GitLab"
     #  icon: "fab fa-fw fa-gitlab"
       # url:
@@ -141,7 +144,6 @@ footer:
     #- label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
       # url:
-
 
 # Reading Files
 include:
@@ -180,14 +182,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -200,22 +200,19 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-# custom SCSS file
+# Custom SCSS file
 custom_styles: "assets/css/main.scss"
-
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 5 # Amount of posts to show per page
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 
 # Plugins (previously gems:)
 plugins:
@@ -225,7 +222,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# mimic GitHub Pages with --safe
+# Mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
@@ -233,43 +230,19 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
-
 # Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
 
 # HTML Compression
-# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-
 
 # Defaults
 defaults:
