@@ -1,13 +1,10 @@
 ---
-layout: category
-title: "test"
-category: test
-permalink: /categories/test/
+title: "테스트"
+layout: archive
+permalink: categories/test
+author_profile: true
+sidebar_main: true
 ---
 
-<h1>Test 카테고리</h1>
-<ul>
-  {% for post in site.categories.test %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+{% assign posts = site.categories.test %}
+{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

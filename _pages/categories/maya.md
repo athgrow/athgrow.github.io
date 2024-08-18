@@ -1,12 +1,11 @@
 ---
-title: "일상기록"
+title: "3D Maya"
 layout: archive
-permalink: categories/diary
+permalink: categories/maya
 author_profile: true
 sidebar_main: true
 ---
 
 
-
-{% assign posts = site.categories.diary %}
+{% assign posts = site.categories.maya %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
