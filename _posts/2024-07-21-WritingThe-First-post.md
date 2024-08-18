@@ -4,8 +4,7 @@ subtitle: "무에서 유로 창조하기 위한 정리글"
 excerpt: "가볍게 씁니다."
 
 permalink: categories/Diary
-categories:
- - Diary
+categories:[Diary]
 tags: [일기, GithubBlog]
 
 date: 2024-07-21
