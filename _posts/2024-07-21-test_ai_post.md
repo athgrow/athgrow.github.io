@@ -1,14 +1,16 @@
 ---
-layout: archive
+
 title: "ChatGPT를 이용한 글 포스팅"
 excerpt: "깃헙 블로그를 만들며 글을 쓰는 중"
-permalink: /categories/test/
-categories: [test]
-tags: [GithubBlog]
-author_profile: true
-sidebar_main: true
+
+categories:
+  -  s-improve
+tags:
+  -  [GithubBlog,test,테스트]
+
 toc: true
 toc_sticky: true
+
 date: 2024-07-21
 last_modified_at: 2024-08-05
 ---
