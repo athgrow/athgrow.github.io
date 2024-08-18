@@ -1,7 +1,7 @@
 ---
 title: "마야 핫키"
 layout: archive
-permalink: /categories/MayaHotkey/
+permalink: /categories/mayahotkey/
 author_profile: true
 sidebar_main: true
 ---
@@ -10,5 +10,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.MayaHotkey %}
+{% assign posts = site.categories.mayahotkey %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
