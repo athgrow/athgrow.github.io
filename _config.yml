@@ -20,7 +20,7 @@ title                    : " 나를 돌아보며, 내일을 설계 : Journey of 
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "AThG"
-description              : "공부, 건강, 기록,취미 블로그"
+description              : "너무 어렵지만 해보는 블로그"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "athgrow/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -93,7 +93,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "가드너 AThgrow🌿"
+  name             : "가드너 AThGrow🌿"
   avatar           : "/assets/images/bonobono.jpg"
   bio              : "성장하는 나무가 되자."
   #location         : "Seoul, South Korea"
