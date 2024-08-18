@@ -4,7 +4,7 @@ subtitle: "subtitle 입니다."
 excerpt: "반영되는 지 테스트 중입니다."
 
 categories: 
-  - s-develop
+  - s_develop
 tags: 
   - [테스트, 태그, 실험]  
 

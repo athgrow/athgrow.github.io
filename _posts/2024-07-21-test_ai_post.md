@@ -4,7 +4,7 @@ title: "ChatGPT를 이용한 글 포스팅"
 excerpt: "깃헙 블로그를 만들며 글을 쓰는 중"
 
 categories:
-  -  s-improve
+  -  s_improve
 tags:
   -  [GithubBlog,test,테스트]
 
