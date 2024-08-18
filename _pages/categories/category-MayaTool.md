@@ -1,7 +1,7 @@
 ---
 title: "마야 틀"
 layout: archive
-permalink: categories/MayaTool
+permalink: /categories/MayaTool/
 author_profile: true
 sidebar_main: true
 ---
