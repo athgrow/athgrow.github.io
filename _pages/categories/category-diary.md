@@ -3,7 +3,7 @@ title: "일상기록"
 layout: archive
 permalink: categories/diary
 author_profile: true
-sidebar_main: true
+sidebar_main: false
 ---
 
 
