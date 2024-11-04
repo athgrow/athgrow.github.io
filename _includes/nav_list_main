@@ -32,18 +32,18 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">📚일기/메모/테스트</span>
+        <span class="nav__sub-title">📚Memo/Test</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "diary" %}
-                        <li><a href="/categories/diary" class="">일기/메모✏️ ({{category[1].size}})</a></li>
+                        <li><a href="/categories/diary" class="">메모✏️ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "test" %}
-                        <li><a href="/categories/test" class="">깃헙 테스트🗑️ ({{category[1].size}})</a></li>
+                        <li><a href="/categories/test" class="">테스트🗑️ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
