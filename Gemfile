@@ -1,5 +1,4 @@
-source 'https://rubygems.org'
-gem 'jekyll'
-gem 'minimal-mistakes-jekyll'
-gem 'csv'
-gem 'base64'
+source "https://rubygems.org"
+gemspec
+
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
