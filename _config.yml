@@ -10,7 +10,7 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "air" # Available options: "default", "air", "aqua", "contrast", "dirt", "neon", "mint", "plum", "sunrise", "custom"
 
@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : # Site tagline that appears below the site title in the masthead
 name                     : "AThG"
 description              : "너무 어렵지만 그래도 해보는 블로그"
-url                      : # Base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://athgrow.github.io
 baseurl                  : # Subpath of your site, e.g. "/blog"
 repository               : "athgrow/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # Path of fallback teaser image, e.g. "/assets/images/500x300.png"
