@@ -10,9 +10,9 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-#theme                  : "minimal-mistakes-jekyll"
-remote_theme           :  "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # Available options: "default", "air", "aqua", "contrast", "dirt", "neon", "mint", "plum", "sunrise", "custom"
+# theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "air" # "default"  "air", "aqua", "contrast", , "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -29,8 +29,6 @@ logo                     : # Path of logo image to display in the masthead, e.g.
 masthead_title           : # Overrides the website title displayed in the masthead; use " " for no title
 breadcrumbs              : true # true or false (default)
 words_per_minute         : 200
-
-# Comments Configuration
 comments:
   provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -39,7 +37,7 @@ comments:
     server               : # Discourse server URL, e.g., meta.discourse.org
   facebook:
     appid                : # Facebook App ID
-    num_posts            : # Number of posts to show (default: 3)
+    num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : "github-light" # "github-light" (default), "github-dark" , "photon-dark"
@@ -48,18 +46,13 @@ comments:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 
-# reCaptcha Configuration
-reCaptcha:
-  siteKey                : # Your reCaptcha site key
-  secret                 : # Your reCaptcha secret key
-
-# Feed and Search
+siteKey                :
+  secret                 :
 atom_feed:
-  path                   : # Path to Atom feed; blank uses feed.xml
-
-search: true # Enable search functionality
-search_full_content: false # Set to false to include only excerpts in search
-search_provider: "lunr" # Search provider (lunr, algolia, google)
+  path                   : # blank (default) uses feed.xml
+search                   : false # true, false (default)
+search_full_content      : false # true, false (default)
+search_provider          : #lunr # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -68,7 +61,6 @@ algolia:
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
-
 # SEO Related
 google_site_verification :
 bing_site_verification   :
@@ -101,7 +93,7 @@ analytics:
 author:
   name             : "가드너 AThGrow🌿"
   avatar           : "/assets/images/bonobono.jpg"
-  bio              : "성장하는 나무가 되자."
+  bio              : "성장하는 나무."
   #location         : "Seoul, South Korea"
   links:
     - label: "Email"
@@ -145,7 +137,7 @@ footer:
     #  icon: "fab fa-fw fa-instagram"
       # url:
 
-# Reading Files
+ Reading Files
 include:
   - .htaccess
   - _pages
