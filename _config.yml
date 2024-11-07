@@ -137,7 +137,7 @@ footer:
     #  icon: "fab fa-fw fa-instagram"
       # url:
 
- Reading Files
+# Reading Files
 include:
   - .htaccess
   - _pages
