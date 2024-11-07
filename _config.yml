@@ -21,7 +21,7 @@ title_separator          : ""
 subtitle                 : "" # Site tagline that appears below the site title in the masthead
 name                     : "AThG"
 description              : "너무 어렵지만 그래도 해보는 블로그"
-url                      : https://athgrow.github.io
+url                      : "https://athgrow.github.io"
 baseurl                  : "/athgrow.github.io" # Subpath of your site, e.g. "/blog"
 repository               : "athgrow/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # Path of fallback teaser image, e.g. "/assets/images/500x300.png"
