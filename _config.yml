@@ -22,7 +22,7 @@ subtitle                 : " Journey of Growth" # Site tagline that appears belo
 name                     : "AThG"
 description              : "너무 어렵지만 그래도 해보는 블로그"
 url                      : "https://athgrow.github.io"
-baseurl                  : "/athgrow" # Subpath of your site, e.g. "/blog"
+baseurl                  : "" # Subpath of your site, e.g. /blog
 repository               : "athgrow/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # Path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # Path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
