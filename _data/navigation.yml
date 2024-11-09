@@ -10,7 +10,7 @@ main:
     url: /tags/
   #- title: "Post by Year"
     #url: /year-archive/
-  - title: "VELOG"
+  - title: "Velog"
     url: https://velog.io/@athgrow
   - title: "Tistory"
     url: https://athgrow.tistory.com/   
