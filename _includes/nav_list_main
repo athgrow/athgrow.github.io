@@ -8,41 +8,41 @@
             📄<span style="font-family: 'PTBandocheB';">전체 글 수</style> <span style="font-family: 'MangoDdobak-B';">{{sum}}</style> <span style="font-family: 'PTBandocheB';">개</style> 
       </li>
       <li>
-        <span class="nav__sub-title">🖥️Maya/Python/Mel</span>
+        <span class="nav__sub-title">🖥Maya/Python/Mel</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "maya" %}
-                        <li><a href="/categories/maya" class="">Maya🔥 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/maya" class="">Maya ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">🌱Grow</span>
+        <span class="nav__sub-title">Grow</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "s_develop" %}
-                        <li><a href="/categories/s_develop" class="">자기개발💧({{category[1].size}})</a></li>
+                        <li><a href="/categories/s_develop" class="">자기개발({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "s_improve" %}
-                        <li><a href="/categories/s_improve" class="">자아성찰💦 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/s_improve" class="">자아성찰 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">📚Memo/Test</span>
+        <span class="nav__sub-title">Memo/Test</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "diary" %}
-                        <li><a href="/categories/diary" class="">메모✏️ ({{category[1].size}})</a></li>
+                        <li><a href="/categories/diary" class="">메모✏ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "test" %}
-                        <li><a href="/categories/test" class="">테스트🗑️ ({{category[1].size}})</a></li>
+                        <li><a href="/categories/test" class="">🗑️ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
