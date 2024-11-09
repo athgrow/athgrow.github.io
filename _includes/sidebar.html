@@ -17,11 +17,7 @@
       {% endif %}
     {% endif %}
 
-    {% if page.sidebar_main %}
-      {% include nav_list_main %}
-    {% endif %}
-
-    <!-- Search Form at the Bottom -->
+    <!-- Move Search Form Here, Above nav_list_main -->
     <form action="/search">
       <div class="tipue_search_left">
         <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
@@ -32,6 +28,10 @@
       <div style="clear: both;"></div>
     </form>
     <!-- End of Search Form -->
+
+    {% if page.sidebar_main %}
+      {% include nav_list_main %}
+    {% endif %}
 
   </div>
 {% endif %}
