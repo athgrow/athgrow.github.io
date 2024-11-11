@@ -8,9 +8,11 @@
     {% for nav in navigation %}
       <li>
         {% if nav.url %}
-          <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
+          <a href="{{ nav.url | relative_url }}">
+            <span class="nav__sub-title" style="font-size: 0.75em;">{{ nav.title }}</span> <!-- 글씨 크기 25% 줄임 -->
+          </a>
         {% else %}
-          <span class="nav__sub-title">{{ nav.title }}</span>
+          <span class="nav__sub-title" style="font-size: 0.75em;">{{ nav.title }}</span> <!-- 글씨 크기 25% 줄임 -->
         {% endif %}
 
         {% if nav.children != null %}
