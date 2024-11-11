@@ -8,41 +8,51 @@
             📄<span style="font-family: 'PTBandocheB';">전체 글 수</style> <span style="font-family: 'MangoDdobak-B';">{{sum}}</style> <span style="font-family: 'PTBandocheB';">개</style> 
       </li>
       <li>
+        <span class="nav__sub-title">Notice</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "about" %}
+                        <li><a href="/categories/about" class="">About({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">Maya/Python/Mel</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "maya" %}
-                        <li><a href="/categories/maya" class="">Maya ({{category[1].size}})</a></li>
+                        <li><a href="/categories/maya" class="">Maya({{category[1].size}})</a></li>
+                    {% endif %}
+                    {% if category[0] == "tool" %}
+                        <li><a href="/categories/tool" class="">Tool({{category[1].size}})</a></li>
+                    {% endif %}
+                    {% if category[0] == "hotkey" %}
+                        <li><a href="/categories/hotkey" class="">Hotkey({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
         <span class="nav__sub-title">Grow</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "s_develop" %}
-                        <li><a href="/categories/s_develop" class="">자기개발({{category[1].size}})</a></li>
+                    {% if category[0] == "hobby" %}
+                        <li><a href="/categories/hobby" class="">Hobby({{category[1].size}})</a></li>
                     {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "s_improve" %}
-                        <li><a href="/categories/s_improve" class="">자아성찰 ({{category[1].size}})</a></li>
+                    {% if category[0] == "tree" %}
+                        <li><a href="/categories/tree" class="">Tree({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
         <span class="nav__sub-title">Memo/Test</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "diary" %}
-                        <li><a href="/categories/diary" class="">메모 ({{category[1].size}})</a></li>
+                    {% if category[0] == "memo" %}
+                        <li><a href="/categories/memo" class="">Memo({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "test" %}
-                        <li><a href="/categories/test" class="">🗑️ ({{category[1].size}})</a></li>
+                        <li><a href="/categories/test" class="">🗑️({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -53,4 +63,3 @@
       </li>
   </ul>
 </nav>
-
