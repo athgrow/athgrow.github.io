@@ -3,7 +3,7 @@
    ========================================================================== */
 
 /* Colors */
-$background-color: mix(#FFFFFF, #E0F7FA, 40%) !default; 
+$background-color: mix(#FFFFFF, #E0F7FA, 60%) !default; 
 $text-color: mix(#0D3B66, #000000, 15%) !default;             // 텍스트 색: 기존 색보다 15% 더 어두운 색으로 조정
 $primary-color: #0077B6 !default;                             // 눈에 띄는 중간 밝기의 블루, 주요 색상
 $border-color: mix(#0077B6, $background-color, 30%) !default; // 아쿠아 블루와 믹스된 테두리 색상
@@ -17,3 +17,21 @@ $link-color-visited: mix(#90e0ef, $link-color, 40%) !default; // 방문한 링�
 $masthead-link-color: $text-color !default;                   // 마스트헤드 링크, 기본 텍스트 색상
 $masthead-link-color-hover: mix(#005f73, $text-color, 20%) !default; // 마스트헤드 링크 호버
 $navicon-link-color-hover: mix(#003554, $background-color, 50%) !default; // 내비게이션 아이콘 호버
+
+/* 태그 배경색 추가 */
+$tag-background-color: mix($primary-color, #FFFFFF, 70%) !default; /* 밝은 파란색 배경 */
+$tag-hover-background-color: mix($primary-color, #003554, 40%) !default; /* 어두운 파란색 배경 (호버 시) */
+$tag-text-color: #ffffff !default; /* 태그 텍스트 색상은 흰색 */
+
+/* 태그 스타일 */
+.page__taxonomy-item-tag {
+  background-color: $tag-background-color;
+  color: $tag-text-color;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.page__taxonomy-item-tag:hover {
+  background-color: $tag-hover-background-color;
+}
