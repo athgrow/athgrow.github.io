@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "default" , "air", "aqua", "contrast", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "Light" # "default" , "air", "aqua", "contrast", "dirt", "neon", "mint", "plum", "sunrise","dark","Light"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -37,8 +37,8 @@ comments:
     server               : # Discourse server URL, e.g., meta.discourse.org
   facebook:
     appid                : # Facebook App ID
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    num_posts            : 3 # 5 (default)
+    colorscheme          : "light" # "light" (default), "dark"
   utterances:
     theme                : "github-light" # "github-light" (default), "github-dark" , "photon-dark"
     issue_term           : "pathname" # "pathname" (default)
