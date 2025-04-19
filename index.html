@@ -4,28 +4,44 @@ permalink: /
 ---
 
 <div class="page__content">
-  <div class="home-categories" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+  <div class="category-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
 
-    {% assign cat_list = "maya,hobby,review,mind" | split: "," %}
-    {% for cat in cat_list %}
-      <div>
-        <h2>{{ cat | capitalize }}</h2>
-        <ul>
-          {% assign posts = site.categories[cat] | slice: 0, 3 %}
-          {% for post in posts %}
-            <li style="margin-bottom: 1rem;">
-              <a href="{{ post.url | relative_url }}">
-                {% if post.image.path %}
-                  <img src="{{ post.image.path }}" alt="{{ post.image.alt }}" style="width: 100%; max-width: 200px; height: auto;" />
-                {% endif %}
-                <h3>{{ post.title }}</h3>
-                <p>{{ post.excerpt }}</p>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endfor %}
+    <div class="category-box style-1">
+      <h2>🛠 Maya</h2>
+      <ul>
+        <li><a href="/categories/tool/">Tool</a></li>
+        <li><a href="/categories/hotkey/">Hotkey</a></li>
+        <li><a href="/categories/register/">Register</a></li>
+      </ul>
+    </div>
+
+    <div class="category-box style-2">
+      <h2>🎨 Hobby</h2>
+      <ul>
+        <li><a href="/categories/guitar/">Guitar</a></li>
+        <li><a href="/categories/plant/">Plant</a></li>
+        <li><a href="/categories/game/">Game</a></li>
+        <li><a href="/categories/study/">Study</a></li>
+      </ul>
+    </div>
+
+    <div class="category-box style-3">
+      <h2>✍️ Review</h2>
+      <ul>
+        <li><a href="/categories/travel/">Travel</a></li>
+        <li><a href="/categories/restaurant/">Restaurant</a></li>
+        <li><a href="/categories/cafe/">Cafe</a></li>
+      </ul>
+    </div>
+
+    <div class="category-box style-1">
+      <h2>💭 Mind</h2>
+      <ul>
+        <li><a href="/categories/reflection/">Reflection</a></li>
+        <li><a href="/categories/daily/">Daily</a></li>
+        <li><a href="/categories/happy/">Happy</a></li>
+      </ul>
+    </div>
 
   </div>
 </div>

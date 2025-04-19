@@ -1,0 +1,26 @@
+
+<script>
+  function toggleDarkMode() {
+    document.documentElement.classList.toggle('dark-mode');
+    localStorage.setItem('dark-mode', document.documentElement.classList.contains('dark-mode'));
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    if (localStorage.getItem('dark-mode') === 'true') {
+      document.documentElement.classList.add('dark-mode');
+    }
+  });
+</script>
+
+<style>
+  .dark-mode {
+    background-color: #111;
+    color: #eee;
+  }
+  .dark-mode a { color: #9cf; }
+</style>
+
+<button onclick="toggleDarkMode()" style="position: absolute; top: 1rem; right: 1rem; z-index: 999;">
+  🌓 다크모드
+</button>
+
