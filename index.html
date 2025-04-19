@@ -1,5 +1,31 @@
 ---
-layout: home
-sidebar_main: true
-author_profile: true
+layout: default
+permalink: /
 ---
+
+<div class="page__content">
+  <div class="home-categories" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+
+    {% assign cat_list = "maya,hobby,review,mind" | split: "," %}
+    {% for cat in cat_list %}
+      <div>
+        <h2>{{ cat | capitalize }}</h2>
+        <ul>
+          {% assign posts = site.categories[cat] | slice: 0, 3 %}
+          {% for post in posts %}
+            <li style="margin-bottom: 1rem;">
+              <a href="{{ post.url | relative_url }}">
+                {% if post.image.path %}
+                  <img src="{{ post.image.path }}" alt="{{ post.image.alt }}" style="width: 100%; max-width: 200px; height: auto;" />
+                {% endif %}
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.excerpt }}</p>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>
