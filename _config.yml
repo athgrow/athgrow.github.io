@@ -1,284 +1,187 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
-
-# Theme Settings
-#
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-
-# theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "Light" # "default" , "air", "aqua", "contrast", "dirt", "neon", "mint", "plum", "sunrise","dark","Light"
-
-# Site Settings
-locale                   : "ko-KR"
-title                    : "나를 돌아보며, 내일을 설계"
-title_separator          : "-"
-subtitle                 : " Journey of Growth" # Site tagline that appears below the site title in the masthead
-name                     : "AThG"
-description              : "너무 어렵지만 그래도 해보는 블로그"
-url                      : "https://athgrow.github.io"
-baseurl                  : "" # Subpath of your site, e.g. /blog
-repository               : "athgrow/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # Path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # Path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # Overrides the website title displayed in the masthead; use " " for no title
-breadcrumbs              : true # true or false (default)
-words_per_minute         : 200
-comments:
-  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
-  disqus:
-    shortname            : # "athgrow-github-io" # Disqus shortname
-  discourse:
-    server               : # Discourse server URL, e.g., meta.discourse.org
-  facebook:
-    appid                : # Facebook App ID
-    num_posts            : 3 # 5 (default)
-    colorscheme          : "light" # "light" (default), "dark"
-  utterances:
-    theme                : "github-light" # "github-light" (default), "github-dark" , "photon-dark"
-    issue_term           : "pathname" # "pathname" (default)
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
-
-siteKey                :
-  secret                 :
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-search                   : true # true, false (default)
-search_full_content      : false # true, false (default)
-search_provider          : #lunr # lunr (default), algolia, google
 algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
-google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-yandex_site_verification :
-naver_site_verification  :
-
-# Social Sharing
-twitter:
-  username               : 
-facebook:
-  username               : 
-  app_id                 : 
-  publisher              : 
-og_image                 : "/assets/images/bonobono.jpg" # Open Graph/Twitter default site image
-
-# Social Profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
-# Analytics
+  application_id: null
+  index_name: null
+  powered_by: null
+  search_only_api_key: null
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "G-TJFH1KGSB7" # Google Analytics Tracking ID
-    anonymize_ip         : false # true or false (default)
-
-# Site Author
+    anonymize_ip: false
+    tracking_id: UA-169251732-1
+  provider: google
+atom_feed:
+  path: null
 author:
-  name             : "가드너 AThGrow🌿"
-  avatar           : "/assets/images/bonobono.jpg"
-  bio              : "성장하는 나무."
-  location         : "Haman, South Korea"
+  avatar: /assets/images/avatar.jpg
+  bio: 생각을 정리하고, 나를 성장시키는 블로그입니다.
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/athgrow"
-    - title: "Velog"
-      icon: "fab fa-fw fa-github"
-      url: "https://velog.io/@athgrow"
-    - label: "Tistory"
-      icon: "fas fa-fw fa-link"
-      url: "https://athgrow.tistory.com/notice"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:athgrow@gmail.com"        
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/athgrow/"
-    
-    #- label: "Twitter"
-    #  icon: "fab fa-fw fa-twitter-square"
-      # url: ""
-    #- label: "Facebook"
-    #  icon: "fab fa-fw fa-facebook-square"
-      # url: ""
-
-# Site Footer
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/athgrow"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/athgrow/"
-
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README
-  - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
+  - icon: fab fa-fw fa-github
+    label: GitHub
+    url: https://github.com/athgrow
+  - icon: fas fa-fw fa-envelope
+    label: Email
+    url: mailto:athgrow@gmail.com
+  location: South Korea
+  name: AThGrow
+baseurl: null
+bing_site_verification: null
+breadcrumbs: true
 category_archive:
-  type: liquid
   path: /categories/
-tag_archive:
   type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - https://jch.penibelst.de/
+comments:
+  discourse:
+    server: null
+  disqus:
+    shortname: null
+  facebook:
+    appid: null
+    colorscheme: null
+    num_posts: null
+  provider: utterances
+  staticman:
+    branch: null
+    endpoint: null
+  utterances:
+    issue_term: pathname
+    theme: photon-dark
 compress_html:
   clippings: all
   ignore:
     envs: development
-
-
-# Defaults
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-      mathjax: true
-      sidebar_main: true
+- scope:
+    path: ''
+    type: posts
+  values:
+    author_profile: true
+    comments: true
+    layout: single
+    mathjax: true
+    read_time: true
+    related: true
+    share: true
+    sidebar_main: true
+- scope:
+    path: ''
+    type: posts
+  values:
+    author_profile: true
+    comments: true
+    layout: single
+    read_time: true
+    related: true
+    share: true
+    sidebar_main: true
+description: 깃헙 블로그 리셋
+encoding: utf-8
+excerpt_separator: '
 
 
-
-
-tipue_search:
-     include:
-         pages: false
-         collections: []
-     exclude:
-         files: [search.html, index.html, tags.html]
-         categories: []
-         tags: []
-
-         
+  '
+exclude:
+- '*.sublime-project'
+- '*.sublime-workspace'
+- vendor
+- .asset-cache
+- .bundle
+- .jekyll-assets-cache
+- .sass-cache
+- assets/js/plugins
+- assets/js/_main.js
+- assets/js/vendor
+- Capfile
+- CHANGELOG
+- config
+- Gemfile
+- Gruntfile.js
+- gulpfile.js
+- LICENSE
+- log
+- node_modules
+- package.json
+- package-lock.json
+- Rakefile
+- README
+- tmp
+- /docs
+- /test
+facebook:
+  app_id: null
+  publisher: null
+  username: null
+footer:
+  links:
+  - icon: fab fa-fw fa-github
+    label: GitHub
+    url: https://github.com/ansohxxn
+google:
+  instant_search: null
+  search_engine_id: null
+google_site_verification: null
+highlighter: rouge
+include:
+- .htaccess
+- _pages
+incremental: false
+keep_files:
+- .git
+- .svn
+kramdown:
+  auto_ids: true
+  enable_coderay: false
+  entity_output: as_char
+  footnote_nr: 1
+  hard_wrap: false
+  input: GFM
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  toc_levels: 1..6
+locale: ko-KR
+logo: null
+lsi: false
+markdown: kramdown
+markdown_ext: markdown,mkdown,mkdn,mkd,md
+masthead_title: null
+minimal_mistakes_skin: dark
+name: AThGrow
+naver_site_verification: null
+og_image: /assets/images/my-cat.jpg
+paginate: 5
+paginate_path: /page:num/
+permalink: /:categories/:title/
+plugins:
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-gist
+- jekyll-feed
+- jekyll-include-cache
+reCaptcha:
+  secret: null
+  siteKey: null
+remote_theme: mmistakes/minimal-mistakes
+repository: ansohxxn/comments
+sass:
+  sass_dir: _sass
+  style: compressed
+search: false
+search_full_content: false
+search_provider: null
+social: {}
+subtitle: null
+tag_archive:
+  path: /tags/
+  type: liquid
+teaser: null
+timezone: null
+title: AThGrow 블로그
+title_separator: '-'
+twitter:
+  username: null
+url: null
+whitelist:
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-gist
+- jekyll-feed
+- jekyll-include-cache
+words_per_minute: 200
+yandex_site_verification: null

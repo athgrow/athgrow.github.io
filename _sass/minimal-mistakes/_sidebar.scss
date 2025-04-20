@@ -8,6 +8,14 @@
 
 .sidebar {
   @include clearfix();
+  // @include breakpoint(max-width $large) {
+  //   /* fix z-index order of follow links */
+  //   position: relative;
+  //   z-index: 10;
+  //   -webkit-transform: translate3d(0, 0, 0);
+  //   transform: translate3d(0, 0, 0);
+  // }
+
   @include breakpoint($large) {
     float: left;
     width: calc(#{$right-sidebar-width-narrow} - 1em);
@@ -20,7 +28,10 @@
     }
 
     &.sticky {
-      overflow-y: hidden;
+      overflow-y: auto;
+      /* calculate height of nav list
+         viewport height - nav height - masthead x-padding
+      */
       height: calc(100vh - #{$nav-height} - 2em);
     }
   }
@@ -41,15 +52,13 @@
   h6 {
     margin-bottom: 0;
     font-family: $sans-serif-narrow;
-    color: #0077B6; // 푸른 계열로 제목 색상 수정
   }
 
   p,
   li {
     font-family: $serif;
-    font-size: $type-size-5; // 카테고리 글씨 크기 수정
+    font-size: $type-size-6;
     line-height: 1.3;
-    color: #4B8BBE; // 텍스트 색상은 부드러운 푸른색으로 변경
   }
 
   img {
@@ -59,58 +68,6 @@
       width: 20px;
       height: 20px;
     }
-  }
-}
-
-/* 카테고리 메뉴 색상 수정 */
-.sidebar .category-list a {
-  color: #0077B6; // 군청색으로 변경
-}
-
-.sidebar .category-list a:hover {
-  color: #005f73; // 카테고리 메뉴에 hover 효과 추가
-}
-
-/* 검색 폼의 배경을 투명하게 설정 */
-form[action="/search"] {
-  background-color: transparent;   // 배경을 투명하게 설정
-  border: none;                     // 경계선 제거
-  padding: 0;                       // 내부 여백 제거
-
-  .tipue_search_left, .tipue_search_right {
-    margin-bottom: 1em;
-  }
-
-  .tipue_search_left {
-    float: left;
-    margin-right: 5px;
-  }
-
-  .tipue_search_icon {
-    width: 20px; // 아이콘 크기 조정
-    height: 20px;
-  }
-
-  .tipue_search_right {
-    float: left;
-    width: 100%;
-  }
-
-  #tipue_search_input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #4B8BBE;   // 푸른색 테두리로 수정
-    border-radius: 4px;                // 모서리 둥글게
-    background-color: transparent;     // 배경 투명
-    color: $text-color;                 // 폰트 색상은 변경하지 않음
-    font-size: $type-size-5;            // 폰트 크기
-    box-sizing: border-box;            // 여백 계산에 포함
-    height: 50%; // 검색창 세로 크기 50% 줄임
-  }
-
-  #tipue_search_input:focus {
-    outline: none;                     // 포커스 시 기본 outline 제거
-    border-color: #0096c7;      // 포커스 시 푸른 색상 변경
   }
 }
 
@@ -147,3 +104,261 @@ form[action="/search"] {
   right: 2em;
   z-index: 10;
 }
+
+.splash .sidebar__right {
+  @include breakpoint($large) {
+    position: relative;
+    float: right;
+    margin-right: 0;
+  }
+
+  @include breakpoint($x-large) {
+    margin-right: 0;
+  }
+}
+
+/*
+   Author profile and links
+   ========================================================================== */
+
+.author__avatar {
+  display: table-cell;
+  vertical-align: top;
+  width: 36px;
+  height: 36px;
+
+  @include breakpoint($large) {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    max-width: 240px;
+    border-radius: 10%;
+
+    @include breakpoint($large) {
+      padding: 5px;
+    }
+  }
+}
+
+.author__content {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 15px;
+  padding-right: 25px;
+  line-height: 1;
+  font-family: $cute;
+
+  @include breakpoint($large) {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.author__name {
+  margin: 0;
+
+  @include breakpoint($large) {
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+}
+.sidebar .author__name {
+  font-family: $cute;
+  font-size: $type-size-4;
+  color:#FFF;
+}
+
+.author__bio {
+  margin: 0;
+  font-family: $cute;
+  font-size: $type-size-4;
+
+  @include breakpoint($large) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: $cute;
+    margin-top: 1.6px;
+    margin-bottom: 3px;
+  }
+}
+
+.author__urls-wrapper {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: $sans-serif;
+  z-index: 20;
+  position: relative;
+  cursor: pointer;
+
+  li:last-child {
+    a {
+      margin-bottom: 0;
+    }
+  }
+
+  .author__urls {
+    span.label {
+      padding-left: 5px;
+    }
+  }
+
+  @include breakpoint($large) {
+    display: block;
+  }
+
+  button {
+    position: relative;
+    margin-bottom: 0;
+
+    &:before {
+      @supports (pointer-events: none) {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+    }
+
+    &.open {
+      &:before {
+        pointer-events: auto;
+      }
+    }
+
+    @include breakpoint($large) {
+      display: none;
+    }
+  }
+}
+
+.author__urls {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  list-style-type: none;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: $background-color;
+  box-shadow: 0 2px 4px 0 rgba(#000, 0.16), 0 2px 10px 0 rgba(#000, 0.12);
+  cursor: default;
+
+  &.is--visible {
+    display: block;
+  }
+
+  @include breakpoint($large) {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: calc(50% - 10px);
+    width: 0;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: $border-color transparent;
+    z-index: 0;
+
+    @include breakpoint($large) {
+      display: none;
+    }
+  }
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 10px);
+    width: 0;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    border-color: $background-color transparent;
+    z-index: 1;
+
+    @include breakpoint($large) {
+      display: none;
+    }
+  }
+
+  ul {
+    padding: 10px;
+    list-style-type: none;
+  }
+
+  li {
+    white-space: nowrap;
+  }
+
+  a {
+    display: block;
+    margin-bottom: 1px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    color: inherit;
+    font-size: $type-size-5;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/*
+   Wide Pages
+   ========================================================================== */
+
+.wide .sidebar__right {
+  margin-bottom: 1em;
+
+  @include breakpoint($large) {
+    position: initial;
+    top: initial;
+    right: initial;
+    width: initial;
+    margin-right: initial;
+    padding-left: initial;
+    z-index: initial;
+
+    &.sticky {
+      float: none;
+    }
+  }
+
+  @include breakpoint($x-large) {
+    width: initial;
+    margin-right: initial;
+  }
+}
+

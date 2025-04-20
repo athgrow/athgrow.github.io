@@ -1,35 +1,26 @@
 
 
-/* 👉 Gowun Dodum 폰트 적용 */
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+/* 💡 민트 색상 정의 */
+$mint-light-1: #009688;
+$mint-light-2: #00796B;
+$mint-light-3: #004D40;
 
-body, .page__content, .sidebar, .site-nav {
-  font-family: 'Gowun Dodum', sans-serif;
-}
+$mint-dark-1: #64FFDA;
+$mint-dark-2: #A7FFEB;
+$mint-dark-3: #B2DFDB;
 
-
-/* 🌿 Mint color palette */
-$mint-light-1: #00d6b7;
-$mint-light-2: #20e2d7;
-$mint-light-3: #7fffd4;
-
-$mint-dark-1: #80e3dc;
-$mint-dark-2: #a5f3ee;
-$mint-dark-3: #c1fff9;
-
-/* Category Box Styling */
 .category-box {
   padding: 1rem;
   border-radius: 1rem;
-  background-color: $mint-light-1;
+  color: white;
+  font-weight: bold;
   transition: background 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
+
+.category-box.style-1 { background-color: $mint-light-1; }
 .category-box.style-2 { background-color: $mint-light-2; }
 .category-box.style-3 { background-color: $mint-light-3; }
 
-.dark-mode .category-box {
-  background-color: $mint-dark-1;
-}
-.dark-mode .category-box.style-2 { background-color: $mint-dark-2; }
-.dark-mode .category-box.style-3 { background-color: $mint-dark-3; }
+.dark-mode .category-box.style-1 { background-color: $mint-dark-1; color: #111; }
+.dark-mode .category-box.style-2 { background-color: $mint-dark-2; color: #111; }
+.dark-mode .category-box.style-3 { background-color: $mint-dark-3; color: #111; }
