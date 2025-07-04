@@ -1,18 +1,7 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
-
-# Theme Settings
-#
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "air" # "default"  "air", "aqua", "contrast", , "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default"
 
 # Site Settings
 locale                   : "ko-KR"
@@ -20,7 +9,7 @@ title                    : "둥지밀면 : Journey of Growth"
 title_separator          :
 subtitle                 :
 name                     : "AThG"
-description              : "깃헙 너무 어려워 죽겠다 정말... 광고없는 나만의 공간을 위해 이 악물고 만듦."
+description              : "깃헙 너무 어려워 죽겠다 정말..."
 url                      : https://athgrow.github.io
 baseurl                  : # Subpath of your site, e.g. "/blog"
 repository               : "athgrow/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -46,8 +35,6 @@ comments:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 
-siteKey                :
-  secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : false # true, false (default)
