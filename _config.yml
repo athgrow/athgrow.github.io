@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "air" # "default"  "air", "aqua", "contrast", , "dirt
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "나를 돌아보며, 내일을 설계 : Journey of Growth"
-title_separator          : "-"
-subtitle                 : # Site tagline that appears below the site title in the masthead
+title                    : "둥지밀면 : Journey of Growth"
+title_separator          :
+subtitle                 :
 name                     : "AThG"
-description              : "너무 어렵지만 그래도 해보는 블로그"
+description              : "깃헙 너무 어려워 죽겠다 정말... 광고없는 나만의 공간을 위해 이 악물고 만듦."
 url                      : https://athgrow.github.io
 baseurl                  : # Subpath of your site, e.g. "/blog"
 repository               : "athgrow/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -91,10 +91,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "가드너 AThGrow🌿"
+  name             : "AThGrow🌿"
   avatar           : "/assets/images/bonobono.jpg"
-  bio              : "성장하는 나무."
-  #location         : "Seoul, South Korea"
+  bio              : "둥지밀면"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -102,18 +101,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/athgrow"
-    #- label: "Instagram"
-    #  icon: "fab fa-fw fa-instagram"
-    #  url: ""
-    #- label: "Website"
-    #  icon: "fas fa-fw fa-link"
-      # url: ""
-    #- label: "Twitter"
-    #  icon: "fab fa-fw fa-twitter-square"
-      # url: ""
-    #- label: "Facebook"
-    #  icon: "fab fa-fw fa-facebook-square"
-      # url: ""
 
 # Site Footer
 footer:
@@ -225,33 +212,12 @@ whitelist:
   - jekyll-include-cache
 
 
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
 
 
 # HTML Compression
@@ -271,7 +237,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
       share: true
       related: true
