@@ -1,87 +1,59 @@
+# _config.yml - Minimal Mistakes 기본 설정 예시
 
-# theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+# 기본 테마 설정
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air"
 
+# 사이트 정보
+locale: "ko-KR"
+title: "둥지밀면 : Journey of Growth"
+title_separator: " | "
+name: "AThG"
+description: "깃헙 너무 어려워 죽겠다 정말... 광고없는 나만의 공간을 위해 이 악물고 만듦."
+url: "https://athgrow.github.io"
+baseurl: ""  # 루트 경로인 경우 빈 문자열로 둠
+repository: "athgrow/comments"
 
-# Site Settings
-locale                   : "ko-KR"
-title                    : "둥지밀면 : Journey of Growth"
-title_separator          :
-subtitle                 :
-name                     : "AThG"
-description              : "깃헙 너무 어려워 죽겠다 정말..."
-url                      : https://athgrow.github.io
-baseurl                  : # Subpath of your site, e.g. "/blog"
-repository               : "athgrow/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # Path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # Path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # Overrides the website title displayed in the masthead; use " " for no title
-breadcrumbs              : true # true or false (default)
-words_per_minute         : 200
+# 기본 설정
+breadcrumbs: true
+words_per_minute: 200
+
+# 댓글 설정 (utterances 예시)
 comments:
-  provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
-  disqus:
-    shortname            : # "athgrow-github-io" # Disqus shortname
-  discourse:
-    server               : # Discourse server URL, e.g., meta.discourse.org
-  facebook:
-    appid                : # Facebook App ID
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+  provider: "utterances"
   utterances:
-    theme                : "github-light" # "github-light" (default), "github-dark" , "photon-dark"
-    issue_term           : "pathname" # "pathname" (default)
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+    theme: "github-light"
+    issue_term: "pathname"
 
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-search                   : false # true, false (default)
-search_full_content      : false # true, false (default)
-search_provider          : #lunr # lunr (default), algolia, google
-algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
-google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-yandex_site_verification :
-naver_site_verification  :
+# 검색 기능
+search: false
 
-# Social Sharing
+# 소셜 공유 설정 예시 (필요하면 활성화)
 twitter:
-  username               :
+  username: ""
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : "/assets/images/bonobono.jpg" # Open Graph/Twitter default site image
+  username: ""
+  app_id: ""
+  publisher: ""
 
-# Social Profiles
+# 소셜 프로필 링크
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type: "Person"
+  name: ""
+  links: []
 
-# Analytics
+# 분석 도구 (Google Analytics 예시)
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
+  provider: "google"
   google:
-    tracking_id          : "G-TJFH1KGSB7" # Google Analytics Tracking ID
-    anonymize_ip         : false # true or false (default)
+    tracking_id: "G-TJFH1KGSB7"
+    anonymize_ip: false
 
-# Site Author
+# 사이트 저자 정보
 author:
-  name             : "AThGrow🌿"
-  avatar           : "/assets/images/bonobono.jpg"
-  bio              : "둥지밀면"
+  name: "AThGrow🌿"
+  avatar: "/assets/images/bonobono.jpg"
+  bio: "둥지밀면"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -90,29 +62,14 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/athgrow"
 
-# Site Footer
+# 사이트 푸터 링크
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/athgrow"
-    #- label: "Twitter"
-    #  icon: "fab fa-fw fa-twitter-square"
-      # url:
-    #- label: "Facebook"
-    #  icon: "fab fa-fw fa-facebook-square"
-      # url:
-    #- label: "GitLab"
-    #  icon: "fab fa-fw fa-gitlab"
-      # url:
-    #- label: "Bitbucket"
-    #  icon: "fab fa-fw fa-bitbucket"
-      # url:
-    #- label: "Instagram"
-    #  icon: "fab fa-fw fa-instagram"
-      # url:
 
- Reading Files
+# 포함/제외할 파일
 include:
   - .htaccess
   - _pages
@@ -141,24 +98,23 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
+  - /docs
+  - /test
+
 keep_files:
   - .git
   - .svn
+
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
-# Conversion
+# 마크다운과 하이라이팅 설정
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -169,21 +125,20 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
-# Sass/SCSS
+# SCSS 설정
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed
 
-
-# Outputting
+# 출력 설정
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 5
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
+# 시간대 (필요시 설정)
+timezone: ""
 
-# Plugins (previously gems:)
+# Jekyll 플러그인
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -191,7 +146,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# mimic GitHub Pages with --safe
+# GitHub Pages 안전 모드에 맞춰 화이트리스트 플러그인 설정
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
@@ -199,7 +154,7 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
-
+# 카테고리, 태그 아카이브 페이지 설정
 category_archive:
   type: liquid
   path: /categories/
@@ -207,18 +162,14 @@ tag_archive:
   type: liquid
   path: /tags/
 
-
-# HTML Compression
-# - https://jch.penibelst.de/
+# HTML 압축 설정
 compress_html:
   clippings: all
   ignore:
     envs: development
 
-
-# Defaults
+# 기본값 (Defaults)
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
