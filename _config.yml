@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "air"
                            # "default" "air", "aqua", "contrast", "dark"
                            # "dirt", "neon", "mint", "plum", "sunrise"
@@ -25,10 +25,10 @@ name                     : "athgrow"      # 화면 하단 영역의 이름입니
 description              : "머리털 빠지도록 갈아엎고 고치고 배우는걸 반복하며 만들었습니다."   # 설명란
 url                      : "https://athgrow.github.io/" # 현재의 블로그 url 입니다.
 baseurl                  : # 폴백(예기치 못한 오류)일 때 연결되는 url입니다.
-repository               : "https://github.com/athgrow/athgrow.github.io" # Github Repo url입니다.
+repository                : "athgrow/athgrow.github.io" # Github Repo url입니다.
 teaser                   : # 폴백일 때 보일 이미지입니다. "assets/images/"로 연결됩니다.
 logo                     : # 화면에 보여지는 logo 이미지입니다. "assets/images"로 세팅합니다.
-masthead_title           : "정리가 재밌는 개발자"     # 화면 title 입니다.
+masthead_title           : "힘드러이"     # 화면 title 입니다.
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : # true, false (default)
