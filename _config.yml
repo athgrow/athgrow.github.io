@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "에스그"
-  avatar           : "image/profile/jerry.jpg"
+  avatar           : "/image/profile/jerry.jpg"
   bio              : "그날 있었던 일들과 생각들을 씁니다. 몇년 후에 보면 그때의 가치관이나 생각들 보는게 재밌더라구요."
   #location         : "Seoul, South Korea"
   links:
