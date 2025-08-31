@@ -4,61 +4,14 @@
 
 @charset "utf-8";
 
-/* ==============================
-   Minimal Mistakes 기본 불러오기
-   ============================== */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* ==============================
-   Custom Fonts
-   ============================== */
+
+// "Cafe24Oneprettynight"
 @font-face {
     font-family: 'Cafe24Oneprettynight';
-    src: local('Cafe24Oneprettynight'),
-         url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    src: local('Cafe24Oneprettynight'), url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
-/* ==============================
-   Sea Theme Overrides 🌊
-   ============================== */
-
-/* 전체 배경과 글자색 */
-body {
-  background-color: #e6f7ff; /* 연한 하늘-바다색 */
-  color: #00334d;            /* 진한 남색 글자 */
-  font-family: 'Cafe24Oneprettynight', sans-serif;
-}
-
-/* 링크 */
-a {
-  color: #007acc;
-}
-a:hover {
-  color: #005f99;
-}
-
-/* 헤더 */
-.masthead {
-  background: linear-gradient(to right, #00aaff, #0066cc);
-  color: white;
-}
-
-/* 헤더 사이트 제목 & 부제목 */
-.masthead .site-title,
-.masthead .site-subtitle {
-  color: #e0faff; /* 연한 바다빛 하늘색 */
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* 살짝 입체감 */
-}
-
-/* 사이드바 */
-.sidebar {
-  background-color: #f0fbff;
-}
-.sidebar a {
-  color: #005f99;
-}
-.sidebar a:hover {
-  color:
