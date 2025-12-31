@@ -1,8 +1,0 @@
----
----
-@import "{{ site.theme }}";
-
-/* 상단 내비게이션 메뉴(Home, Category) 숨기기 */
-header ul {
-    display: none !important;
-}
